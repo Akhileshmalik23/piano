@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Virtual Piano</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="piano">
+        <div class="white" onclick="playNote('C4')">
+            
+        </div>
+        <div class="white" onclick="playNote('D4')">
+            <div class="black" onclick="playNote('C#4')"></div>
+        </div>
+        <div class="white" onclick="playNote('E4')"></div>
+        <div class="white" onclick="playNote('F4')">
+            <div class="black" onclick="playNote('D#4')"></div>
+        </div>
+        <div class="white" onclick="playNote('G4')">
+            <div class="black" onclick="playNote('F#4')"></div>
+        </div>
+        <div class="white" onclick="playNote('A4')">
+            <div class="black" onclick="playNote('G#4')"></div>
+        </div>
+        <div class="white" onclick="playNote('B4')"></div>
+        
+        <div class="white" onclick="playNote('C5')">
+            <div class="black" onclick="playNote('A#4')"></div>
+        </div>
+        <div class="white" onclick="playNote('D5')">
+            <div class="black" onclick="playNote('C#5')"></div>
+        </div>
+        <div class="white" onclick="playNote('E5')"></div>
+        <div class="white" onclick="playNote('F5')">
+            <div class="black" onclick="playNote('D#5')"></div>
+        </div>
+        <div class="white" onclick="playNote('G5')">
+            <div class="black" onclick="playNote('F#5')"></div>
+        </div>
+        <div class="white" onclick="playNote('A5')">
+            <div class="black" onclick="playNote('G#5')"></div>
+        </div>
+        <div class="white" onclick="playNote('B5')"></div>
+        
+        <div class="white" onclick="playNote('C6')">
+            <div class="black" onclick="playNote('A#5')"></div>
+        </div>
+        <div class="white" onclick="playNote('D6')">
+            <div class="black" onclick="playNote('C#6')"></div>
+        </div>
+        <div class="white" onclick="playNote('E6')"></div>
+        <div class="white" onclick="playNote('F6')">
+            <div class="black" onclick="playNote('D#6')"></div>
+        </div>
+        <div class="white" onclick="playNote('G6')">
+            <div class="black" onclick="playNote('F#6')"></div>
+        </div>
+        <div class="white" onclick="playNote('A6')">
+            <div class="black" onclick="playNote('G#6')"></div>
+        </div>
+        <div class="white" onclick="playNote('B6')">
+            <div class="black" onclick="playNote('A#6')"></div>
+        </div>
+    </div>
+
+    <audio id="piano-sound"></audio>
+    <script src="script.js"></script>
+</body>
+
+</html>
