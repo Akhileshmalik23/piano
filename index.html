@@ -9,8 +9,12 @@
 </head>
 
 <body>
+
+    <div class="hey">
+        <h1>Piano</h1>
+    </div>
     <div class="piano">
-        <div class="white" onclick="playNote('C4')">
+        <div class="white" onclick="playNote('C4')" ontouchstart="playNote('C4')">
             
         </div>
         <div class="white" onclick="playNote('D4')">
@@ -62,9 +66,9 @@
         <div class="white" onclick="playNote('A6')">
             <div class="black" onclick="playNote('G#6')"></div>
         </div>
-        <div class="white" onclick="playNote('B6')">
+        <!-- <div class="white" onclick="playNote('B6')">
             <div class="black" onclick="playNote('A#6')"></div>
-        </div>
+        </div> -->
     </div>
 
     <audio id="piano-sound"></audio>

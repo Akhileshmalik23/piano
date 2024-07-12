@@ -1,38 +1,98 @@
-body {
-    display: flex;
+
+.hey{
+    display:flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    background-color: #EBEBEB;
-    margin: 0;
+    font-size: larger;
 }
 .piano{
     display:flex;
     justify-content: center;
     align-items: center;
+    margin-top: 100px;
 }
 .white{
     background: white;
     height: 225px;
-    width: 35px;
+    min-width: 33px;
+    width: 3vw;
     border: 1px solid #B9B9B9;
     border-bottom-right-radius: 10px;
     border-bottom-left-radius: 10px;
     box-shadow: 0px 5px 3px #D2D2D2;
 }
+
 .black{
     background: #161616;
     height: 115px;
-    width: 20px;
+    width: 25px;
     border: 1px solid black;
-    
     border-bottom-right-radius: 5px;
     border-bottom-left-radius: 5px;
     box-shadow: 0px 5px 3px #D2D2D2;
-    margin-left: -11px;
+    margin-left: -15px;
 }
 
+@media screen and (min-width: 700px) and (max-width: 970px) {
+    .black{
+        background: #161616;
+        height: 115px;
+        width: 20px;
+        border: 1px solid black;
+        border-bottom-right-radius: 5px;
+        border-bottom-left-radius: 5px;
+        box-shadow: 0px 5px 3px #D2D2D2;
+        margin-left: -13px;
+    }
+}
 @media (max-width: 700px) {
+
+    body {
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; */
+    height: 100vh;
+    background-color: #EBEBEB;
+    margin: 0;
+    transform: rotate(90deg); 
+}
+
+.hey{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: larger;
+    margin-top: 0;
+
+}
     .piano {
-        transform: rotate(90deg); /* Rotate the piano board */
-    }}
+        max-width: 600px;
+        margin-top: 10px;
+    }
+
+    .white{
+        background: white;
+        height: 225px;
+        width: 2vh;
+        border: 1px solid #B9B9B9;
+        border-bottom-right-radius: 10px;
+        border-bottom-left-radius: 10px;
+        box-shadow: 0px 5px 3px #D2D2D2;
+    }
+    .black{
+        background: #161616;
+        height: 115px;
+        width: 20px;
+        border: 1px solid black;
+        border-bottom-right-radius: 5px;
+        border-bottom-left-radius: 5px;
+        box-shadow: 0px 5px 3px #D2D2D2;
+        margin-left: -11px;
+    }
+    
+
+
+}
